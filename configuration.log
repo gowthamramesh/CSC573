@@ -1,0 +1,104 @@
+[1109694.252055] color:0,limit=61440, min=163840, max=1310720
+[1109694.252059] color:2,limit=61440, min=163840, max=1310720
+[1109694.252061] color:3,limit=61440, min=163840, max=1310720
+
+-----------------------------------------------------------------------------------------
+
+TC1: emergency off: H1 sending 9M : 500 emergency packets
+DP:0, total = 63784, min = 63273, pdrop = 12, fdrop = 19|etotal = 500, emin = 480, emark = 10,epdrop=10,efdrop = 10
+DP:1, total = 0, min = 0, pdrop = 0, fdrop = 0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:2, total = 0, min = 0, pdrop = 0, fdrop = 0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:3, total = 0, min = 0, pdrop = 0, fdrop = 0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+
+-----------------------------------------------------------------------------------------
+
+TC2: emergency on: H1 sending 9M : 500 emergency packets
+Emergency Red statistics
+DP:0, total = 20996, min = 20485, pdrop = 6, fdrop = 5|etotal = 500, emin = 494, emark = 6,epdrop=0,efdrop = 0
+DP:1, total = 0, min = 0, pdrop = 0, fdrop = 0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:2, total = 0, min = 0, pdrop = 0, fdrop = 0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:3, total = 0, min = 0, pdrop = 0, fdrop = 0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+
+-----------------------------------------------------------------------------------------
+
+TC3: emergency off: H1 sending 9.3M: 511 emergency packets
+Emergency Red statistics
+DP:0, total = 102796, min = 102265, pdrop = 16, fdrop = 10|etotal = 511, emin = 505, emark = 6,epdrop=6,efdrop = 0
+DP:1, total = 0, min = 0, pdrop = 0, fdrop = 0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:2, total = 0, min = 0, pdrop = 0, fdrop = 0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:3, total = 0, min = 0, pdrop = 0, fdrop = 0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+
+-----------------------------------------------------------------------------------------
+
+TC4: emergency on: H1 sending 9.3M: 501 emergency packets
+Emergency Red statistics
+DP:0, total = 46297, min = 45777, pdrop = 10, fdrop = 9|etotal = 501, emin = 494, emark = 7,epdrop=0,efdrop = 0
+DP:1, total = 0, min = 0, pdrop = 0, fdrop = 0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:2, total = 0, min = 0, pdrop = 0, fdrop = 0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:3, total = 0, min = 0, pdrop = 0, fdrop = 0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+
+-----------------------------------------------------------------------------------------
+
+TC5: emergency off: H1 sending 9.5M: 501 emergency packets
+Emergency Red statistics
+DP:0, total = 62045, min = 60900, pdrop = 618, fdrop = 205|etotal = 501, emin = 322, emark = 6,epdrop=6,efdrop = 173
+DP:1, total = 0, min = 0, pdrop = 0, fdrop = 0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:2, total = 0, min = 0, pdrop = 0, fdrop = 0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:3, total = 0, min = 0, pdrop = 0, fdrop = 0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+
+-----------------------------------------------------------------------------------------
+
+TC6: emergency on: H1 sending 9.5M: 501 emergency packets
+Emergency Red statistics
+DP:0, total = 18926, min = 18141, pdrop = 241, fdrop = 88|etotal = 501, emin = 442, emark = 14,epdrop=0,efdrop = 45
+DP:1, total = 0, min = 0, pdrop = 0, fdrop = 0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:2, total = 0, min = 0, pdrop = 0, fdrop = 0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:3, total = 0, min = 0, pdrop = 0, fdrop = 0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+
+
+----------------------------------------------------------------------------------------
+
+3.2 MB * 3 = 9.6MB  . No Emergency packet
+
+csc573@csc573-PowerEdge-T610:~/ered_08Nov/ered$ cat /proc/estat
+Emergency Red statistics
+DP:0, total = 18391, min = 17312, pdrop = 149, fdrop = 0 qlen=12504|etotal = 930, emin = 930, emark = 0,epdrop=0,efdrop = 0
+DP:1, total = 0, min = 0, pdrop = 0, fdrop = 0 qlen=0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:2, total = 146894, min = 146514, pdrop = 380, fdrop = 0 qlen=12504|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:3, total = 51493, min = 50887, pdrop = 580, fdrop = 26 qlen=12504|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+
+-----------------------------------------------------------------------------------------
+
+3.2MB * 3 = 9.6MB + Emergency packet in bursts of 30 with EMERGENCY OFF
+
+csc573@csc573-PowerEdge-T610:~/ered_08Nov/ered$ cat /proc/estat
+Emergency Red statistics
+DP:0, total = 104949, min = 101565, pdrop = 909, fdrop = 0 qlen=14588|etotal = 2490, emin = 2475, emark = 15,epdrop=15,efdrop = 0
+DP:1, total = 0, min = 0, pdrop = 0, fdrop = 0 qlen=0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:2, total = 231881, min = 229559, pdrop = 2322, fdrop = 0 qlen=13546|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:3, total = 136479, min = 132582, pdrop = 3562, fdrop = 335 qlen=12504|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+
+-------------------------------------------------------------------------------------------
+
+3.2MB * 3 = 9.6MB + Emergency packet in bursts of 30 with EMERGENCY ON
+
+csc573@csc573-PowerEdge-T610:~/ered_08Nov/ered$ cat /proc/estat
+Emergency Red statistics
+DP:0, total = 32926, min = 30809, pdrop = 287, fdrop = 0 qlen=12504|etotal = 1830, emin = 1810, emark = 20,epdrop=0,efdrop = 0
+DP:1, total = 0, min = 0, pdrop = 0, fdrop = 0 qlen=0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:2, total = 37998, min = 37337, pdrop = 661, fdrop = 0 qlen=12504|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:3, total = 34021, min = 32698, pdrop = 1030, fdrop = 293 qlen=11462|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+
+---------------------------------------------------------------------------------------------
+
+3 Hosts (More than max thresholds, hence force drops). Emergency ON with 30 packets bursts
+
+csc573@csc573-PowerEdge-T610:~/ered_08Nov/ered$ cat /proc/estat
+Emergency Red statistics
+DP:0, total = 137660, min = 117311, pdrop = 2557, fdrop = 16352 qlen=21882|etotal = 2040, emin = 1409, emark = 31,epdrop=0,efdrop = 600
+DP:1, total = 0, min = 0, pdrop = 0, fdrop = 0 qlen=0|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:2, total = 121367, min = 72127, pdrop = 1794, fdrop = 47446 qlen=14588|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+DP:3, total = 84371, min = 26921, pdrop = 555, fdrop = 56895 qlen=7294|etotal = 0, emin = 0, emark = 0,epdrop=0,efdrop = 0
+
+--------------------------------------------------------------------------------------------
+

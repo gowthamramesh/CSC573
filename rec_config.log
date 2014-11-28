@@ -1,0 +1,181 @@
+t Case: Emergency off: Host1 sending 500 Packets at 9Mbps
+
+root@csc573-Precision-WorkStation-390:~/sender# ./archive-udp-server.o 30000
+packets receiving. Curr packet- 50
+packets receiving. Curr packet- 100
+packets receiving. Curr packet- 150
+packets receiving. Curr packet- 200
+packets receiving. Curr packet- 250
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 255, Current Seq- 257
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 281, Current Seq- 283
+packets receiving. Curr packet- 300
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 330, Current Seq- 332
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 349, Current Seq- 351
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 351, Current Seq- 353
+packets receiving. Curr packet- 350
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 377, Current Seq- 379
+packets receiving. Curr packet- 400
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 412, Current Seq- 414
+packets receiving. Curr packet- 450
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 459, Current Seq- 461
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 474, Current Seq- 476
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 485, Current Seq- 487
+
+
+Test Case: Emergency On: Host1 sending 500 packets at 9Mbps
+root@csc573-Precision-WorkStation-390:~/sender# ./archive-udp-server.o 30000
+packets receiving. Curr packet- 50
+packets receiving. Curr packet- 100
+packets receiving. Curr packet- 150
+packets receiving. Curr packet- 200
+packets receiving. Curr packet- 250
+packets receiving. Curr packet- 300
+packets receiving. Curr packet- 350
+packets receiving. Curr packet- 400
+packets receiving. Curr packet- 450
+packets receiving. Curr packet- 500
+
+Test Case: Emergency off: Host1 sending 511 packets at 9.3Mbps
+root@csc573-Precision-WorkStation-390:~/sender# ./archive-udp-server.o 30000
+packets receiving. Curr packet- 50
+packets receiving. Curr packet- 100
+packets receiving. Curr packet- 150
+packets receiving. Curr packet- 200
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 225, Current Seq- 227
+packets receiving. Curr packet- 250
+packets receiving. Curr packet- 300
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 302, Current Seq- 304
+packets receiving. Curr packet- 350
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 397, Current Seq- 399
+packets receiving. Curr packet- 400
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 445, Current Seq- 447
+packets receiving. Curr packet- 450
+"testlog" 99L, 4780C                                                                                                1,1           Top
+
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 456, Current Seq- 458
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 473, Current Seq- 475
+IP:192.168.1.20, PortNo: 8565, packets missed- -500, last seq- 500, Current Seq- 1
+packets receiving. Curr packet- 500
+
+Test Case: Emergency On: Host1 sending 501 packets at 9.3Mbps
+t@csc573-Precision-WorkStation-390:~/sender# ./archive-udp-server.o 30000
+packets receiving. Curr packet- 50
+packets receiving. Curr packet- 100
+packets receiving. Curr packet- 150
+packets receiving. Curr packet- 200
+packets receiving. Curr packet- 250
+packets receiving. Curr packet- 300
+packets receiving. Curr packet- 350
+packets receiving. Curr packet- 400
+packets receiving. Curr packet- 450
+packets receiving. Curr packet- 500
+
+Test case: Emergency off: Host1 sending 501 packets at 9.5Mbps
+root@csc573-Precision-WorkStation-390:~/sender# ./archive-udp-server.o 30000
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 42, Current Seq- 44
+packets receiving. Curr packet- 50
+packets receiving. Curr packet- 100
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 124, Current Seq- 126
+packets receiving. Curr packet- 150
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 195, Current Seq- 197
+packets receiving. Curr packet- 200
+packets receiving. Curr packet- 250
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 251, Current Seq- 253
+packets receiving. Curr packet- 300
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 302, Current Seq- 304
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 309, Current Seq- 311
+
+Test case: Emergency on: Hoat1 sending 501 packets at 9.5Mbps
+root@csc573-Precision-WorkStation-390:~/sender# ./archive-udp-server.o 30000
+packets receiving. Curr packet- 50
+packets receiving. Curr packet- 100
+packets receiving. Curr packet- 150
+packets receiving. Curr packet- 200
+packets receiving. Curr packet- 250
+packets receiving. Curr packet- 300
+packets receiving. Curr packet- 350
+IP:192.168.1.20, PortNo: 8565, packets missed- 34, last seq- 351, Current Seq- 386
+packets receiving. Curr packet- 400
+packets receiving. Curr packet- 450
+
+Test case: Emergency OFF : All host sending iperf traffic(3.2MB * 3 Hosts) + Emergency traffic from Host 1 (butst of 30)
+
+                                                                                                                 
+csc573@csc573-Precision-WorkStation-390:~/sender$ ./archive-udp-server.o 30000
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 50
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 100
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 8, Current Seq- 10 
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 14, Current Seq- 16 
+packets receiving. Curr packet- 150
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 200
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 250
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 300
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+IP:192.168.1.20, PortNo: 8565, packets missed- 1, last seq- 27, Current Seq- 29 
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 350
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+
+------------------------------------------------------------------------------------------------------------
+
+Test case: Emergency ON : All host sending iperf traffic(3.2MB * 3 Hosts) + Emergency traffic from Host 1 (butst of 30)
+
+csc573@csc573-Precision-WorkStation-390:~/sender$ ./archive-udp-server.o 30000
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 50
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 100
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 150
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 200
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 250
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 300
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 350
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 400
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 450
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 500
+
+
+
+Test case: Emergency ON :All hosts transmitting above max threshold + Emergency traffic from host 1 (burst of 30)
+
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 1300
+IP:192.168.1.20, PortNo: 8565, packets missed- -15, last seq- 15, Current Seq- 1 
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 1350
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+IP:192.168.1.20, PortNo: 8565, packets missed- -6, last seq- 6, Current Seq- 1 
+packets receiving. Curr packet- 1400
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 1450
+IP:192.168.1.20, PortNo: 8565, packets missed- -29, last seq- 29, Current Seq- 1 
+packets receiving. Curr packet- 1500
+IP:192.168.1.20, PortNo: 8565, packets missed- -26, last seq- 29, Current Seq- 4  
+
+
+
