@@ -1,0 +1,4 @@
+/home/csc573/ered_08Nov/iproute2-3.16.0/tc/tc qdisc del dev eth0 root
+/home/csc573/ered_08Nov/iproute2-3.16.0/tc/tc qdisc del dev eth1 ingress
+/home/csc573/ered_08Nov/iproute2-3.16.0/tc/tc qdisc del dev eth2 ingress
+/home/csc573/ered_08Nov/iproute2-3.16.0/tc/tc qdisc del dev eth3 ingress
